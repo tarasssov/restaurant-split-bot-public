@@ -1,0 +1,24 @@
+name: Deploy to Linux VM
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    if: ${{ secrets.DEPLOY_HOST != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            export APP_DIR="${{ secrets.DEPLOY_APP_DIR }}"
+            export BRANCH="main"
+            export SERVICE_NAME="restaurant-split-bot"
+            "$APP_DIR/ops/deploy/scripts/deploy_vm.sh"

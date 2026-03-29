@@ -1,0 +1,40 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtualenv
+.venv/
+
+# Local env/secrets
+.env
+.env.save
+vision-ocr-bot-key.json
+AGENTS.md
+memory/
+
+# Generated logs/reports
+logs/
+fixtures/generated/
+
+# Local scratch artifacts
+YOUR_IMAGE.jpg
+simple.jpg
+test_receipt.HEIC
+test_receipt_3.JPG
+test_receipt_4.JPG
+test_receipt_5.JPG
+app/YOUR_IMAGE.jpg
+app/test_receipt.HEIC
+
+# local server artifacts
+pillow_heif.py
+requirements.server.txt
+
+# local backup files
+app/*.bak.*
+
+# generated local automation templates
+ops/automation/cron/*.cron
+ops/automation/launchd/*.plist

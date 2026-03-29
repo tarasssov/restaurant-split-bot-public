@@ -1,0 +1,17 @@
+[Unit]
+Description=Restaurant Split Telegram Bot (Webhook)
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/restaurant-split-bot
+EnvironmentFile=/opt/restaurant-split-bot/.env
+ExecStart=/opt/restaurant-split-bot/.venv/bin/python -m app.webhook
+Restart=always
+RestartSec=3
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

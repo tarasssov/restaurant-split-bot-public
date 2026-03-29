@@ -1,0 +1,10 @@
+aiogram>=3.7.0
+openai>=1.0.0
+socksio>=1.0.0
+python-dotenv>=1.0.1
+requests>=2.32.0
+PySocks>=1.7.1
+Pillow>=10.4.0
+pytesseract>=0.3.10
+pillow-heif>=0.18.0; python_version >= "3.9"
+backports.zoneinfo>=0.2.1; python_version < "3.9"
