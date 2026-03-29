@@ -1,0 +1,51 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="170" y1="118" x2="1080" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" rx="28" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1184" height="544" rx="24" fill="#0B1220" stroke="#334155" stroke-width="2"/>
+
+  <rect x="96" y="96" width="112" height="112" rx="24" fill="url(#accent)"/>
+  <path d="M133 133H171V147H133V133ZM121 163H183V177H121V163ZM141 193H163V207H141V193Z" fill="white"/>
+
+  <text x="240" y="142" fill="white" font-family="Arial, sans-serif" font-size="56" font-weight="700">restaurant-split-bot</text>
+  <text x="240" y="192" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="26">
+    Split restaurant bills from receipt photos and calculate who owes whom
+  </text>
+
+  <rect x="96" y="268" width="250" height="160" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="128" y="320" fill="#A7F3D0" font-family="Arial, sans-serif" font-size="22" font-weight="700">1. Receipt photo</text>
+  <text x="128" y="360" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">Someone pays the bill</text>
+  <text x="128" y="390" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">and sends a check photo</text>
+
+  <rect x="378" y="268" width="250" height="160" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="410" y="320" fill="#93C5FD" font-family="Arial, sans-serif" font-size="22" font-weight="700">2. OCR + parser</text>
+  <text x="410" y="360" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">The bot extracts items,</text>
+  <text x="410" y="390" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">totals and structure</text>
+
+  <rect x="660" y="268" width="250" height="160" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="692" y="320" fill="#FDE68A" font-family="Arial, sans-serif" font-size="22" font-weight="700">3. Group answers</text>
+  <text x="692" y="360" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">Who ate what?</text>
+  <text x="692" y="390" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">Who already paid?</text>
+
+  <rect x="942" y="268" width="242" height="160" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="974" y="320" fill="#F9A8D4" font-family="Arial, sans-serif" font-size="22" font-weight="700">4. Final settlement</text>
+  <text x="974" y="360" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">The bot calculates</text>
+  <text x="974" y="390" fill="#E5E7EB" font-family="Arial, sans-serif" font-size="20">who owes whom</text>
+
+  <path d="M346 348H378" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <path d="M628 348H660" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <path d="M910 348H942" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="96" y="512" fill="#94A3B8" font-family="Arial, sans-serif" font-size="22">
+    Telegram bot · OCR · Receipt parsing · Expense sharing
+  </text>
+</svg>

@@ -1,10 +1,44 @@
 # restaurant-split-bot
 
+[![CI](https://github.com/tarasssov/restaurant-split-bot-public/actions/workflows/ci.yml/badge.svg)](https://github.com/tarasssov/restaurant-split-bot-public/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/github/license/tarasssov/restaurant-split-bot-public)](./LICENSE)
+
 Telegram bot for splitting restaurant bills from receipt photos.
 
 This bot solves a very common post-dinner problem: one or two people pay the full bill, everyone ordered different things, and then the group has to figure out who owes what.
 
 The project accepts a receipt image, runs OCR, extracts line items, asks users to confirm or fix the parse, tracks who ate what and who already paid, and calculates who owes whom in the end.
+
+![restaurant-split-bot preview](docs/preview-card.svg)
+
+## Why This Exists
+
+Restaurant bill splitting is messy in real life:
+- one or two people pay the whole check
+- several people ordered different dishes and drinks
+- someone shared food
+- someone already transferred money
+- the group still needs a clear final answer: who owes whom
+
+This bot is built to take that chaos and turn it into a structured settlement flow.
+
+## How It Works
+
+1. A user sends a receipt photo.
+2. The bot runs OCR and extracts raw receipt text.
+3. The parser builds line items and the total.
+4. Users confirm or fix the parsed items.
+5. Participants mark who ate what and who already paid.
+6. The bot calculates balances and minimal transfers.
+
+```mermaid
+flowchart LR
+    A[Receipt Photo] --> B[OCR]
+    B --> C[Receipt Parser]
+    C --> D[User Confirmation]
+    D --> E[Participants and Payments]
+    E --> F[Settlement Result]
+```
 
 ## Features
 
