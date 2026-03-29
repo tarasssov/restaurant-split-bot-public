@@ -230,3 +230,7 @@ docs/        public notes and roadmap
 - No real credentials should be committed. Use `.env`.
 - This public repo intentionally excludes private ops/runbooks and real receipt datasets.
 - If you want production rollout, adapt `ops/deploy/` to your own infrastructure.
+
+## License
+
+MIT
