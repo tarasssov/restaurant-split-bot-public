@@ -2,7 +2,9 @@
 
 Telegram bot for splitting restaurant bills from receipt photos.
 
-The project accepts a receipt image, runs OCR, extracts line items, lets users confirm or fix the parse, collects participants, and calculates who owes whom.
+This bot solves a very common post-dinner problem: one or two people pay the full bill, everyone ordered different things, and then the group has to figure out who owes what.
+
+The project accepts a receipt image, runs OCR, extracts line items, asks users to confirm or fix the parse, tracks who ate what and who already paid, and calculates who owes whom in the end.
 
 ## Features
 
