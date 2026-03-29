@@ -259,6 +259,12 @@ fixtures/    sanitized synthetic parser fixtures
 docs/        public notes and roadmap
 ```
 
+## Community
+
+- Contributing guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+- Security policy: [SECURITY.md](./SECURITY.md)
+- Release checklist: [docs/RELEASE_CHECKLIST.md](./docs/RELEASE_CHECKLIST.md)
+
 ## Notes
 
 - No real credentials should be committed. Use `.env`.

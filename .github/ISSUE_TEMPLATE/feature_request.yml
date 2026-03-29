@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a product, parser, OCR, or workflow improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      placeholder: It is hard to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: The bot could...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Another option would be...
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra context
+      description: Add examples, screenshots, or synthetic receipt text if useful. Do not attach sensitive real-world data.
